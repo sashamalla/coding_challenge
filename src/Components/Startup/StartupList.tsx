@@ -26,9 +26,9 @@ export default function StartupList(): ReactElement {
                 {startup.name}
               </Typography>
               <Typography sx={{ fontSize: 15 }}>
-                {`${JSON.stringify(startup.dateFounded)} | ${
+                {`Founded: ${startup.dateFounded.getFullYear()} | ${
                   startup.employees
-                } | ${startup.totalFunding} | ${
+                } Employees | ${startup.totalFunding}$ | ${
                   startup.currentInvestmentStage
                 }`}
               </Typography>
